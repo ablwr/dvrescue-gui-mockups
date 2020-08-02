@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DVRescue GUI Mockups</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style type="text/css">
+		nav > div:nth-of-type(4) {
+			border-bottom: 6px solid black;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<nav>
+			<div class="logo"><img src="dvrescue.png"></div>
+			<div>Capture</div>
+			<div>Playback</div>
+			<div>Settings</div>
+			<div>Help</div>
+		</nav>
+		<div style="padding:2em">
+			<div>
+				<p>DVRescue Version 1.23456</p>
+				<p>FFmpeg Version 4.3</p>
+				<p>MediaInfoLib Version 20.20</p>
+			</div>
+			<div>
+				<label for="output">Save to</label>
+				<input type="text" size="50" name=""></input>
+				<button>Browse</botton>
+			</div>
+			<br><br>
+			<div>
+				<label for="devices">Select device</label>
+				<select id="devices" name="devices" size="5" width="80">
+				  <option value="one" selected >DV here</option>
+				  <option value="two">Another DV</option>
+				  <option value="three">Wow so many decks</option>
+				  <option value="four">Test FFmpeg stream</option>
+				</select>
+				<br><br>
+				<button>Check device status</button>
+			</div>
+			<div style="padding-top:2em">Other settings forthcoming?</div>
+		</div>
+	</main>
+</body>
+</html>

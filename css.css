@@ -1,0 +1,84 @@
+html, body {
+	margin: 4em;
+	padding: 0;
+	display: grid;
+	justify-content: center;
+	font-family: sans-serif;
+}
+
+main {
+	border: 1px solid black;
+	width: 800px;
+	height: 800px;
+}
+
+nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+	align: left;
+}
+
+.logo img {
+	width: 100px;
+	height: auto;
+}
+
+nav > div {
+	min-width: 100px;
+	min-height: 94px;
+	border: 1px solid black;
+	align-content: center;
+	justify-content: center;
+	display: grid;
+	font-weight: 800;
+	font-size: 2em;
+	font-size: 1.5em;
+}
+
+nav > div:nth-of-type(even) {
+	background: #db5a6b;
+	color: white;
+}
+
+section > div > p {
+	padding: 2em;
+}
+
+section {
+	display: grid;
+	justify-content: center
+}
+
+.video {
+	margin: 1em;
+	width: 640px;
+	height: 480px;
+	background-color: #666;
+	border: 1px solid black;
+}
+
+.underVideo {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	align-content: center;
+}
+
+.underVideo button {
+	font-size: 2em;
+	color: white;
+	background-color: black;
+}
+
+select > option {
+	width: 35em;
+}
+
+ul, li, .help > p, .help > ul > li > p {
+	margin: 0;
+}
+
+
