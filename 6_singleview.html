@@ -6,6 +6,7 @@
 	<style type="text/css">
 		nav > div:nth-of-type(2) {
 			border-bottom: 6px solid black;
+			border-top: 6px solid black;
 		}
 	</style>
 </head>
@@ -19,20 +20,37 @@
 			<div>Help</div>
 		</nav>
 		<section>
-			<div class="video">Video happens here</div>
-			<div class="audio">Errors across time tracker bar here; tbd audio?</div>
+			<div>
+				<label for="output">Save to</label>
+				<input type="text" size="50" name=""></input>
+				<button>Browse</botton>
+			</div>
+			<div class="video"><img src="img/colorbars.jpg"></div>
+			<div class="audio"><img src="img/dvgraph.jpg"></div>
+			<div class="overVideo playback">
+				<button>(Tape)</button>
+				<button>(Deck)</button>
+				<button>(Head)</button>
+				<button>(Green)</button>
+				<button>(Yellow)</button>
+				<button>(Red)</button>
+			</div>
 			<div class="underVideo">
 				<ul>
 					<li>Total Error #: COUNT</li>
 					<li>DURATION</li>
 				</ul>
-				<button>Go</button>
+				<button>Start</button>
 				<ul>
 					<li>TIMECODE</li>
 					<li>REC DATE/TIME</li>
 				</ul>
 			</div>
 		</section>
+	</main>
+	<main id="sidebar">
+		<section>1</section>
+		<section>2</section>
 	</main>
 </body>
 </html>

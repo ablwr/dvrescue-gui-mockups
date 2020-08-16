@@ -4,17 +4,23 @@ html, body {
 	display: grid;
 	justify-content: center;
 	font-family: sans-serif;
+	grid-template-columns: 1fr 0.75fr;
 }
 
 main {
 	border: 1px solid black;
-	width: 800px;
+	width: 1000px;
 	height: 800px;
+}
+
+#sidebar {
+	height: 800px;
+	width: 600px;
 }
 
 nav {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(7, 1fr);
 }
 
 .logo {
@@ -60,12 +66,21 @@ section {
 	border: 1px solid black;
 }
 
+.video img {
+	width: 640px;
+	height: 480px;
+}
 .audio {
 	margin: 0em 1em 1em 1em;
 	width: 640px;
 	height: 60px;
 	background-color: #ddd;
 	border: 1px solid black;
+}
+
+.audio img {
+	width: 640px;
+	height: 60px;
 }
 
 .underVideo {
@@ -91,3 +106,81 @@ ul, li, .help > p, .help > ul > li > p {
 }
 
 
+.table {
+	justify-content: flex-start;
+}
+
+table tr:nth-of-type(even) {
+	background: #ccc;
+}
+
+.package {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr)
+}
+
+.pack {
+	width: 300px;
+	height: 300px;
+	display: grid;
+	align-content: baseline;
+	padding: 1em;
+}
+
+.pack .thumb {
+	width: 220px;
+	height: 180px;
+	background: url(img/colorbars.jpg);
+	background-size: contain;
+}
+
+.pack p {
+	padding: 0;
+	margin: 0;
+}
+
+.more {
+	display: grid;
+	justify-content: center;
+	align-content: space-evenly;
+	background: #b9d9d9;
+	width: 220px;
+	height: 40px;
+}
+
+.more-info::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 1em;
+	position: relative;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 1em;
+}
+
+.more-info.up {
+	top: 0.15em;
+}
+
+.more-info.down:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.details {
+	z-index: 1000;
+	background: white;
+	border: 1px solid black;
+	width: 500px;
+}
+
+.details dl {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+dt {
+	font-weight: bold;
+}
