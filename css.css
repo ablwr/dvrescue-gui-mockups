@@ -71,11 +71,21 @@ section {
 	height: 480px;
 }
 .audio {
-	margin: 0em 1em 1em 1em;
+	margin: 0em 1em 0em 1em;
 	width: 640px;
 	height: 60px;
 	background-color: #ddd;
 	border: 1px solid black;
+}
+
+.scroll {
+	width: 640px;
+	border: 1px solid black;
+	margin: 0em 1em 0em 1em;
+}
+
+.scroll img {
+	width: 640px;
 }
 
 .audio img {
@@ -83,18 +93,30 @@ section {
 	height: 60px;
 }
 
-.underVideo {
+.transfer .underVideo {
 	display: grid;
-	margin: 1em;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	justify-content: center;
 	align-content: center;
 }
 
-.underVideo button {
-	font-size: 2em;
+ .underVideo {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-content: center;
+	align-content: center;
+	border: 1px solid black;
+	margin: 0em 1em 0em 1em;
+}
+
+.underVideo span {
+	justify-content: center;
+	display: grid;
+}
+
+.underVideo img {
+	width: 60px;
 	color: white;
-	background-color: black;
 }
 
 select > option {
@@ -183,4 +205,10 @@ table tr:nth-of-type(even) {
 
 dt {
 	font-weight: bold;
+}
+
+.transfer {
+	display: grid;
+	justify-content: center;
+	justify-items: center;
 }
