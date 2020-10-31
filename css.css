@@ -4,7 +4,6 @@ html, body {
 	display: grid;
 	justify-content: center;
 	font-family: sans-serif;
-	grid-template-columns: 1fr 0.75fr;
 }
 
 main {
@@ -211,4 +210,27 @@ dt {
 	display: grid;
 	justify-content: center;
 	justify-items: center;
+}
+
+.deviceNav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.deviceNav > button {
+	min-width: 100px;
+	min-height: 94px;
+	border: 1px solid black;
+	align-content: center;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: inherit;
+	font-weight: 800;
+	font-size: 2em;
+	font-size: 1.5em;
+	margin: 0.5em;
+}
+
+.deviceNav > button img {
+	width: 30px;
+	height: auto;
 }
